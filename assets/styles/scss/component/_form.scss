@@ -1,0 +1,42 @@
+.form {
+    &-control {
+        min-height: $form-field-h;
+        border-radius: 0.125rem;
+        border: 1px solid $border-color;
+        background: $white;
+        padding: $form-field-padding;
+
+        .info {
+            font-size: 0.875rem;
+            color: $purple;
+            &:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+
+            span {
+                color: $black;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        gap: 1.25rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1.5625rem;
+        }
+    }
+
+    &__group {
+        display: flex;
+        gap: 9px;
+        flex-direction: column;
+        flex: 1;
+
+        label {
+            font-size: 0.875rem;
+            line-height: 1.3125rem;
+        }
+    }
+}

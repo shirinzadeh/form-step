@@ -1,0 +1,42 @@
+.navbar {
+    background-color: $black;
+    flex-basis: 24%;
+
+    .nav-item {
+        &:not(:last-child) {
+            padding-bottom: 1.56rem;
+        }
+    }
+
+    .nav-link {
+        color: $gray-200;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 0.875rem;
+
+        .tail {
+            width: 1.5rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            border: 0px solid transparent;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $gray-100;
+            color: $white;
+        }
+    }
+
+    .step-active {
+        .tail {
+            background-color: $success;
+        }
+        span {
+            color: $success;
+        }
+    }
+
+    .step-default {
+        cursor: not-allowed;
+    }
+}

@@ -1,0 +1,84 @@
+.text-muted {
+    color: $text-muted;
+}
+
+.bg-main {
+    background-color: $bg-color;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.p-section {
+    padding: $padding-section;
+}
+
+.btn-primary {
+    background-color: $purple;
+    color: $white;
+}
+
+.btn-secondary {
+    background-color: $gray-800;
+    color: $gray-400;
+}
+
+.success {
+    color: $success !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.overlay {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        opacity: .5;
+     }
+}
+
+// ********* JS CLASSES
+.js-item-active {
+    border: 1px solid $success !important;
+}
+
+.js-step-active {
+    .tail {
+        background-color: $success !important;
+        color: $white !important;
+    }
+
+    span {
+        color: $success !important;
+    }
+}
+
+.js-step-checked {
+    .tail {
+        background-color: $purple !important;
+    }
+
+    span {
+        color: $white !important;
+    }
+}

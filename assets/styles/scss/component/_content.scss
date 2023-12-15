@@ -1,0 +1,47 @@
+.content {
+    height: 100%;
+    padding: 1.5625rem $padding-section;
+    overflow-y: auto;
+
+    .item-wrapper {
+        .item-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $white;
+            border: 1px solid transparent;
+            padding: 0.9375rem 1.25rem;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-bottom: 0.625rem;
+            }
+        }
+
+        .item {
+            display: flex;
+            align-items: center;         
+
+            &__img {
+                padding-right: 1.375rem;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            &__name {
+                font-size: 0.875rem;
+                font-weight: 500;
+            }
+
+            &__mail {
+                font-size: 0.75rem;
+                line-height: 1.1875rem;
+            }
+
+        }
+    }
+}

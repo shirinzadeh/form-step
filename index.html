@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS-Code task</title>
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- End google font  -->
+    <link rel="stylesheet" href="assets/styles/css/style.min.css">
+
+</head>
+
+<body>
+    <div class="app h-100">
+        <nav class="navbar p-section">
+            <ul class="navbar-nav js-step-wrapper">
+                <div class="nav-item js-step">
+                    <a href="#step-1" class="nav-link step-active">
+                        <span class="tail">1</span>
+                        <span>Staff</span>
+                    </a>
+                </div>
+                <div class="nav-item js-step">
+                    <a href="#step-2" class="nav-link step-default" disabled="disabled">
+                        <span class="tail">2</span>
+                        <span>Service</span>
+                    </a>
+                </div>
+                <div class="nav-item js-step">
+                    <a href="#step-3" class="nav-link step-default" disabled="disabled">
+                        <span class="tail">3</span>
+                        <span>Date & Time</span>
+                    </a>
+                </div>
+                <div class="nav-item js-step">
+                    <a href="#step-4" class="nav-link step-default" disabled="disabled">
+                        <span class="tail">4</span>
+                        <span>Confirmation</span>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <header class="header bg-main">
+                <div>
+                    <h3 class="header__title"></h3>
+                </div>
+                <!-- <button >
+                    <img src="assets/img/close.svg" alt="Close">
+                </button> -->
+            </header>
+            <div class="content bg-main js-step-content" id="step-1">
+                <div class="item-wrapper staffes">
+                </div>
+            </div>
+            <div class="content bg-main js-step-content" id="step-2">
+                <div class="item-wrapper services">
+                </div>
+            </div>
+            <div class="content bg-main js-step-content" id="step-3" validated="true">
+                <div class="item-wrapper date">
+                    <h2>sdgdfgdfg</h2>
+                    <div id="datepicker"></div>
+
+                    <p>Date: <input type="text" id="datepicker2" disabled></p>
+                </div>
+            </div>
+            <div class="content bg-main js-step-content" id="step-4" validated="true">
+                <div class="item-wrapper details">
+                    <form action="" class="form">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control main-input__field form_field name" id="name "
+                                    required>
+                            </div>
+                            <div class="form__group">
+                                <label for="name">Last Name</label>
+                                <input type="text" class="form-control main-input__field form_field lastname"
+                                    id="lastname " required>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="name">Email</label>
+                                <input type="email" class="form-control main-input__field form_field email" id="email "
+                                    required>
+                            </div>
+                            <div class="form__group">
+                                <label for="name">Phone</label>
+                                <input type="tel" class="form-control main-input__field form_field" id="phone ">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="name">Note</label>
+                                <div class="form-control">
+                                    <p class="info">Staff: <span></span></p>
+                                    <p class="info">Service: <span></span></p>
+                                    <p class="info">Date: <span>sdgds</span></p>
+                                    <p class="info">Price: <span class="success">dfdf</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SUCCES MODAL  -->
+                        <div id="successModal" class="modal hidden">
+                            <header>fdgfdg</header>
+
+                        </div>
+                        <!-- END SUCCES MODAL  -->
+                        <!-- SUCCES MODAL  -->
+                        <div id="errorModal" class="modal hidden">
+                            <header>errorrr</header>
+
+                        </div>
+                        <!-- END SUCCES MODAL  -->
+
+                        <button class="js-form-submit">submit</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <footer class="footer">
+                <button class="btn btn--secondary invisible js-prev-btn">back</button>
+                <!-- Warning message  -->
+                <div class="warning-content invisible">
+                    <img src="assets/img/error.svg" alt="Warning">
+                    <span class="text-uppercase "></span>
+                </div>
+                <!-- End warning message  -->
+                <button class="btn btn--primary js-next-btn">next</button>
+            </footer>
+        </main>
+    </div>
+    <!-- jQuery  -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- main.js -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
